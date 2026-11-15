@@ -452,7 +452,7 @@ def radExpo(inSpace):
     rLGCRpl = 0.9#milisieverts
     rLGCRsp = 1.3#milisieverts
     nukeExpo = float(input("What has been your daily exposre to Nuclear Technology Radiation in microsieverts(ex. 30): "))
-    gcrExpo = float(input("What has been your daily exposre to Galactic Cosmic Radiation in millisiverts: "))
+    gcrExpo = float(input("What has been your daily exposre to Galactic Cosmic Radiation in millisiverts(ex. 0.9): "))
     if nukeExpo > rLNuke:
         outputs = outputs + 'Nuclear technology radiation exposer exceedes recommended safe levels\n'
     if inSpace == True:
@@ -506,6 +506,7 @@ def vision():
         print("All questions clear you are not currently at risk of SANS.")
         
 def muscleAtrophy():
+    outputs = ''
     preWeight = float(input("Enter pre-flight body weight(ex. 75kg: "))
     deadLift = float(input("Enter current dead lift capability: "))
     benchPress = float(input("Enter current bench press capability: "))
